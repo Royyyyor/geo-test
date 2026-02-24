@@ -1,0 +1,90 @@
+# robots.txt for www.qibook.com
+# 企百科 - 新一代企业信用信息查询平台
+
+# 允许所有搜索引擎爬虫
+User-agent: *
+Allow: /
+Disallow: /api/internal/
+Disallow: /admin/
+Disallow: /user/settings/
+
+# Google 搜索
+User-agent: Googlebot
+Allow: /
+
+# Google AI (Gemini)
+User-agent: Google-Extended
+Allow: /
+
+# Bing 搜索
+User-agent: Bingbot
+Allow: /
+
+# Baidu 搜索
+User-agent: Baiduspider
+Allow: /
+
+# Sogou 搜索
+User-agent: Sogou web spider
+Allow: /
+
+# 360 搜索
+User-agent: 360Spider
+Allow: /
+
+# 头条搜索
+User-agent: Bytespider
+Allow: /
+
+# Yandex 搜索
+User-agent: YandexBot
+Allow: /
+
+# OpenAI / ChatGPT 爬虫
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic / Claude 爬虫
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI 爬虫
+User-agent: PerplexityBot
+Allow: /
+
+# Meta AI 爬虫
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Apple 爬虫
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Cohere AI 爬虫
+User-agent: cohere-ai
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Amazon Alexa
+User-agent: ia_archiver
+Allow: /
+
+# Sitemap 位置
+Sitemap: https://www.qibook.com/sitemap.xml
+
+# LLM 结构化信息
+# See: https://www.qibook.com/llms.txt

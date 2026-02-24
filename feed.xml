@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>企百科 - 新一代企业信用信息查询平台</title>
+    <subtitle>查企业、查商机、查标讯、查风险，AI智能查企，企业全景一触即知</subtitle>
+    <link href="https://www.qibook.com/" rel="alternate" type="text/html"/>
+    <link href="https://www.qibook.com/feed.xml" rel="self" type="application/atom+xml"/>
+    <id>https://www.qibook.com/</id>
+    <updated>2026-02-24T00:00:00+08:00</updated>
+    <author>
+        <name>企百科</name>
+        <uri>https://www.qibook.com</uri>
+    </author>
+    <rights>Copyright 2024 北京中数智汇科技股份有限公司</rights>
+    <generator>QiBook Static Generator</generator>
+
+    <!-- 首页 -->
+    <entry>
+        <title>企百科 - 新一代企业信用信息查询平台</title>
+        <link href="https://www.qibook.com/" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>企百科是由北京中数智汇科技股份有限公司推出的新一代企业信用信息查询平台，覆盖3.2亿+企业，1000+数据维度，提供工商信息、司法信息、信用评级、股权穿透、尽职调查、风险分析等全维度企业数据服务，支持AI智能查企。</summary>
+        <category term="首页" label="首页"/>
+    </entry>
+
+    <!-- 关于企百科 -->
+    <entry>
+        <title>关于企百科 - 平台介绍与核心优势</title>
+        <link href="https://www.qibook.com/about" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/about</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>深入了解企百科：由北京中数智汇科技股份有限公司运营，专注于金融场景的企业数据分析平台。免费提供企业查询、批量查询、受益所有人查询、股权穿透等核心功能。支持AI智能查企与MCP协议对接。</summary>
+        <category term="关于" label="关于我们"/>
+    </entry>
+
+    <!-- 企业百科 -->
+    <entry>
+        <title>企业百科 - 一个企业一份简历</title>
+        <link href="https://www.qibook.com/enterprise" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/enterprise</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>全面呈现企业基本信息、经营状况、股东结构、历史沿革等核心数据。涵盖工商信息、股东信息、主要人员、对外投资、分支机构、变更信息和企业年报。</summary>
+        <category term="产品功能" label="产品功能"/>
+    </entry>
+
+    <!-- 风险分析 -->
+    <entry>
+        <title>企业风险分析 - 多维度风险预警</title>
+        <link href="https://www.qibook.com/risk" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/risk</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>全面评估企业司法风险与经营信用风险。涵盖司法案件、失信被执行人、经营异常、行政处罚等多维度风险预警，帮助企业和机构做出风控决策。</summary>
+        <category term="产品功能" label="产品功能"/>
+    </entry>
+
+    <!-- 尽职调查 -->
+    <entry>
+        <title>尽职调查 - 风险为本的合规尽调助手</title>
+        <link href="https://www.qibook.com/due-diligence" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/due-diligence</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>支持风险评测、空壳公司识别、受益所有人穿透（适配最新反洗钱3号令）、实际控制人追溯等深度调查功能，为金融机构客户准入提供全面风控支撑。</summary>
+        <category term="产品功能" label="产品功能"/>
+    </entry>
+
+    <!-- 关联分析 -->
+    <entry>
+        <title>关联分析 - 股权穿透与企业图谱</title>
+        <link href="https://www.qibook.com/graph" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/graph</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>可视化企业图谱，多层股权穿透一键查看。支持股权结构图、关联方分析、集团信息梳理，发现隐藏关联关系。</summary>
+        <category term="产品功能" label="产品功能"/>
+    </entry>
+
+    <!-- 应用场景：尽职调查 -->
+    <entry>
+        <title>尽职调查场景 - 金融机构合规尽调解决方案</title>
+        <link href="https://www.qibook.com/scenario/due-diligence" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/scenario/due-diligence</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>风险为本的合规尽调助手，支持企业风险评测、空壳公司快速识别、受益所有人穿透、实际控制人追溯，为金融机构客户准入提供全面风控支撑。</summary>
+        <category term="应用场景" label="应用场景"/>
+    </entry>
+
+    <!-- 应用场景：营销拓客 -->
+    <entry>
+        <title>营销拓客 - 精准客群筛选与商机发现</title>
+        <link href="https://www.qibook.com/scenario/marketing" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/scenario/marketing</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>基于海量企业数据精准筛选目标客户，发现商业机会，支持批量查询与数据导出，助力业务团队高效拓展市场。</summary>
+        <category term="应用场景" label="应用场景"/>
+    </entry>
+
+    <!-- 应用场景：绿色金融 -->
+    <entry>
+        <title>绿色金融 - ESG绿色企业识别</title>
+        <link href="https://www.qibook.com/scenario/green-finance" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/scenario/green-finance</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>精准识别ESG绿色企业与可持续发展项目，支持绿色信贷、绿色债券等业务场景的企业筛查与环境风险评估。</summary>
+        <category term="应用场景" label="应用场景"/>
+    </entry>
+
+    <!-- 应用场景：采购风险管理 -->
+    <entry>
+        <title>采购风险管理 - 供应商寻源数字化方案</title>
+        <link href="https://www.qibook.com/scenario/procurement" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/scenario/procurement</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>全面评估供应商资质、经营状况、信用水平和履约能力，降低采购风险，优化供应链管理。</summary>
+        <category term="应用场景" label="应用场景"/>
+    </entry>
+
+    <!-- 定价方案 -->
+    <entry>
+        <title>企百科定价方案 - 免费核心功能与增值服务</title>
+        <link href="https://www.qibook.com/pricing" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/pricing</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>企百科提供免费查询服务，包括企业查询、批量查询、受益所有人查询、股权穿透等核心功能均可免费使用，同时提供更深度的付费增值服务。</summary>
+        <category term="定价" label="定价方案"/>
+    </entry>
+
+    <!-- API服务 -->
+    <entry>
+        <title>企百科API服务 - 企业数据接口</title>
+        <link href="https://www.qibook.com/api" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/api</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>企百科提供企业数据API接口服务，支持工商信息、司法信息、信用评级等全维度数据的程序化接入，适用于企业级数据集成需求。</summary>
+        <category term="API" label="API服务"/>
+    </entry>
+</feed>
