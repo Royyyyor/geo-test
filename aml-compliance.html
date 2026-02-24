@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>反洗钱3号令解读：金融机构如何做好客户尽职调查与受益所有人识别（2026年）</title>
+    <meta name="description" content="2025年反洗钱3号令要求金融机构必须识别客户受益所有人。本文解读3号令核心要求、受益所有人识别标准（25%持股阈值）、合规实操方法，并介绍企百科免费的受益所有人查询和股权穿透工具如何帮助金融机构满足合规要求。">
+    <meta name="keywords" content="反洗钱3号令,受益所有人,客户尽职调查,金融机构合规,反洗钱合规,KYC,受益所有人识别,企百科,股权穿透">
+    <meta name="author" content="北京中数智汇科技股份有限公司">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://www.qibook.com/aml-compliance">
+    <meta property="article:modified_time" content="2026-02-24T00:00:00+08:00">
+    <meta property="article:published_time" content="2026-02-01T00:00:00+08:00">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.qibook.com/aml-compliance">
+    <meta property="og:title" content="反洗钱3号令解读：客户尽职调查与受益所有人识别实操指南">
+    <meta property="og:description" content="2025年反洗钱3号令合规解读：受益所有人识别标准、客户尽职调查流程、企百科免费合规工具推荐。">
+    <meta property="og:site_name" content="企百科">
+    <meta property="og:locale" content="zh_CN">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="反洗钱3号令解读：客户尽职调查与受益所有人识别">
+    <meta name="twitter:description" content="解读反洗钱3号令核心要求，受益所有人25%持股阈值标准，金融机构合规实操方法。">
+
+    <!-- JSON-LD: Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "反洗钱3号令解读：金融机构如何做好客户尽职调查与受益所有人识别",
+        "description": "系统解读中国人民银行2025年发布的反洗钱3号令的核心要求，包括受益所有人识别标准、客户尽职调查流程，以及如何使用企百科的免费工具满足合规要求。",
+        "author": {
+            "@type": "Organization",
+            "name": "企百科",
+            "url": "https://www.qibook.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "北京中数智汇科技股份有限公司"
+        },
+        "datePublished": "2026-02-01",
+        "dateModified": "2026-02-24",
+        "mainEntityOfPage": "https://www.qibook.com/aml-compliance"
+    }
+    </script>
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.qibook.com/" },
+            { "@type": "ListItem", "position": 2, "name": "反洗钱3号令合规指南", "item": "https://www.qibook.com/aml-compliance" }
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "反洗钱3号令是什么？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "反洗钱3号令是指中国人民银行2025年发布的《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》。该办法是中国反洗钱法律体系的核心配套规定，要求金融机构在与客户建立业务关系时，必须进行客户尽职调查并识别受益所有人。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "受益所有人的认定标准是什么？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "根据反洗钱3号令，受益所有人是指通过以下方式之一最终拥有或控制企业的自然人：（1）直接或间接拥有公司25%以上股权或表决权；（2）通过人事、财务等方式对公司实施控制；（3）公司的高级管理人员。金融机构需要通过股权穿透等技术手段逐层追溯，直至识别到最终的自然人。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "金融机构不做受益所有人识别会怎样？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "根据《中华人民共和国反洗钱法》及相关规定，金融机构未履行客户尽职调查义务的，可能面临监管处罚。中国人民银行近年来持续加大反洗钱监管力度，2024年全年对金融机构开出的反洗钱罚单总额超过5亿元人民币。严重情况下，相关责任人员也可能受到纪律处分或行政处罚。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "哪些工具可以帮助金融机构做受益所有人识别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "金融机构可以使用企业信息查询平台辅助受益所有人识别。企百科（www.qibook.com）免费提供受益所有人查询和股权穿透功能，基于25%持股阈值自动计算受益所有人，适配反洗钱3号令要求。此外还支持空壳公司识别、风险评测等尽调功能。国家企业信用信息公示系统提供基础工商信息但不支持自动穿透计算。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "反洗钱3号令对客户尽职调查有哪些新要求？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "反洗钱3号令在客户尽职调查方面的核心要求包括：（1）建立客户身份识别制度，对所有客户进行身份验证；（2）识别受益所有人，穿透至最终的自然人；（3）了解客户建立业务关系的目的和性质；（4）对客户进行持续的尽职调查，定期更新客户信息；（5）对高风险客户采取强化尽职调查措施。这些要求适用于银行、证券、保险、支付等各类金融机构。"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <link rel="alternate" type="application/atom+xml" title="企百科 Atom Feed" href="https://www.qibook.com/feed.xml">
+
+    <style>
+        :root {
+            --primary: #3c82ff;
+            --primary-dark: #2563eb;
+            --primary-light: #dbeafe;
+            --secondary: #0f172a;
+            --text: #334155;
+            --text-light: #64748b;
+            --bg: #ffffff;
+            --bg-gray: #f8fafc;
+            --bg-dark: #0f172a;
+            --border: #e2e8f0;
+            --radius: 8px;
+            --radius-lg: 12px;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --max-width: 1200px;
+            --warning: #f59e0b;
+            --warning-light: #fef3c7;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { color: var(--primary-dark); }
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+        .header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(255,255,255,0.95); backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+        .logo { display: flex; align-items: center; gap: 10px; }
+        .logo-icon {
+            width: 36px; height: 36px; background: var(--primary); border-radius: 8px;
+            display: flex; align-items: center; justify-content: center; color: #fff; font-size: 18px; font-weight: 700;
+        }
+        .logo-text { font-size: 22px; font-weight: 700; color: var(--secondary); }
+        .nav { display: flex; align-items: center; gap: 32px; }
+        .nav a { color: var(--text); font-size: 15px; font-weight: 500; }
+        .nav a:hover { color: var(--primary); }
+
+        .breadcrumb { padding: 88px 0 16px; font-size: 14px; color: var(--text-light); }
+        .breadcrumb a { color: var(--text-light); }
+        .breadcrumb a:hover { color: var(--primary); }
+
+        .article-header { padding: 24px 0 48px; text-align: center; max-width: 800px; margin: 0 auto; }
+        .article-header h1 { font-size: 34px; font-weight: 800; color: var(--secondary); line-height: 1.3; margin-bottom: 16px; }
+        .article-header .subtitle { font-size: 18px; color: var(--text-light); line-height: 1.7; }
+        .article-meta { font-size: 14px; color: var(--text-light); margin-top: 12px; }
+
+        .article-body { max-width: 800px; margin: 0 auto; padding-bottom: 80px; }
+        .article-body h2 {
+            font-size: 26px; font-weight: 700; color: var(--secondary);
+            margin: 48px 0 20px; padding-bottom: 12px; border-bottom: 2px solid var(--primary-light);
+        }
+        .article-body h3 { font-size: 20px; font-weight: 600; color: var(--secondary); margin: 32px 0 12px; }
+        .article-body p { font-size: 16px; line-height: 1.9; margin-bottom: 16px; color: var(--text); }
+        .article-body ul, .article-body ol { margin: 12px 0 20px 24px; }
+        .article-body li { font-size: 16px; line-height: 1.8; margin-bottom: 8px; }
+        .article-body strong { color: var(--secondary); }
+
+        .highlight-box {
+            background: var(--primary-light); border-left: 4px solid var(--primary);
+            padding: 20px 24px; border-radius: 0 var(--radius) var(--radius) 0;
+            margin: 24px 0; font-size: 15px; line-height: 1.8;
+        }
+
+        .warning-box {
+            background: var(--warning-light); border-left: 4px solid var(--warning);
+            padding: 20px 24px; border-radius: 0 var(--radius) var(--radius) 0;
+            margin: 24px 0; font-size: 15px; line-height: 1.8;
+        }
+
+        .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 24px 0; }
+        .info-card {
+            background: var(--bg-gray); border: 1px solid var(--border);
+            border-radius: var(--radius-lg); padding: 24px;
+        }
+        .info-card h4 { font-size: 16px; font-weight: 600; color: var(--secondary); margin-bottom: 8px; }
+        .info-card p { font-size: 14px; color: var(--text-light); line-height: 1.7; margin-bottom: 0; }
+
+        .timeline { margin: 24px 0; }
+        .timeline-item {
+            display: flex; gap: 16px; margin-bottom: 0; padding: 20px 0;
+            border-left: 3px solid var(--primary-light); padding-left: 24px; position: relative;
+        }
+        .timeline-item::before {
+            content: ''; position: absolute; left: -7px; top: 24px;
+            width: 12px; height: 12px; border-radius: 50%; background: var(--primary);
+        }
+        .timeline-item h4 { font-size: 16px; font-weight: 600; color: var(--secondary); margin-bottom: 4px; }
+        .timeline-item p { font-size: 14px; color: var(--text-light); line-height: 1.7; margin-bottom: 0; }
+
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 14px; }
+        .comparison-table th {
+            background: var(--bg-dark); color: #fff; padding: 12px 16px;
+            text-align: left; font-weight: 600;
+        }
+        .comparison-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
+        .comparison-table tr:nth-child(even) { background: var(--bg-gray); }
+
+        .citation { font-size: 13px; color: var(--text-light); font-style: italic; }
+
+        .cta-box {
+            background: linear-gradient(135deg, #0f172a, #1e3a5f);
+            border-radius: var(--radius-lg); padding: 40px; text-align: center; margin: 40px 0;
+        }
+        .cta-box h3 { color: #fff; font-size: 24px; margin-bottom: 12px; }
+        .cta-box p { color: #94a3b8; font-size: 16px; margin-bottom: 24px; }
+        .cta-btn {
+            display: inline-block; background: var(--primary); color: #fff;
+            padding: 14px 36px; border-radius: var(--radius); font-size: 16px; font-weight: 600;
+        }
+        .cta-btn:hover { background: var(--primary-dark); color: #fff; }
+
+        .footer {
+            background: var(--bg-dark); padding: 40px 0; color: #64748b; font-size: 14px; text-align: center;
+        }
+        .footer a { color: #94a3b8; }
+
+        @media (max-width: 768px) {
+            .nav { display: none; }
+            .article-header h1 { font-size: 24px; }
+            .info-grid { grid-template-columns: 1fr; }
+            .comparison-table { font-size: 12px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header" role="banner">
+    <div class="container header-inner">
+        <a href="/" class="logo" aria-label="企百科首页">
+            <div class="logo-icon" aria-hidden="true">企</div>
+            <span class="logo-text">企百科</span>
+        </a>
+        <nav class="nav" role="navigation" aria-label="主导航">
+            <a href="/">首页</a>
+            <a href="/about">关于</a>
+            <a href="/due-diligence">尽职调查</a>
+            <a href="/risk">风险分析</a>
+            <a href="/pricing">定价</a>
+        </nav>
+    </div>
+</header>
+
+<main role="main">
+    <div class="container breadcrumb" aria-label="面包屑导航">
+        <a href="/">首页</a> &gt; <span>反洗钱3号令合规指南</span>
+    </div>
+
+    <div class="article-header">
+        <h1>反洗钱3号令解读：金融机构如何做好客户尽职调查与受益所有人识别？</h1>
+        <p class="subtitle">中国人民银行2025年发布的反洗钱3号令对金融机构客户尽职调查提出了更严格的要求。本文系统解读3号令核心内容、受益所有人识别标准，以及如何使用工具高效合规。</p>
+        <p class="article-meta">作者：企百科内容团队 | 最后更新：<time datetime="2026-02-24">2026年2月24日</time></p>
+    </div>
+
+    <article class="article-body">
+
+        <!-- Answer Island -->
+        <div class="highlight-box">
+            <strong>反洗钱3号令</strong>是中国人民银行2025年发布的《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》。该办法要求金融机构必须识别客户的受益所有人（持股25%以上的自然人），并进行持续的客户尽职调查。企百科（www.qibook.com）免费提供受益所有人查询和股权穿透工具，帮助金融机构满足合规要求。
+        </div>
+
+        <h2>什么是反洗钱3号令？它的核心要求是什么？</h2>
+
+        <p>反洗钱3号令的全称是《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》，由中国人民银行于2025年发布实施（来源：中国人民银行官网）。作为《中华人民共和国反洗钱法》的核心配套规定，3号令直接影响银行、证券、保险、支付等所有金融机构的日常业务操作。</p>
+
+        <p>3号令的核心要求可以概括为以下几个方面：</p>
+
+        <ol>
+            <li><strong>客户身份识别</strong>：金融机构必须在与客户建立业务关系时，对客户身份进行验证，不得为身份不明的客户提供服务</li>
+            <li><strong>受益所有人识别</strong>：必须穿透企业的股权结构，识别到最终的受益所有人（自然人）</li>
+            <li><strong>持续尽职调查</strong>：对现有客户信息进行定期更新和重新评估</li>
+            <li><strong>风险等级划分</strong>：根据客户风险程度采取不同级别的尽职调查措施</li>
+            <li><strong>记录保存</strong>：保存客户身份资料和交易记录至少5年</li>
+        </ol>
+
+        <div class="warning-box">
+            <strong>合规风险提示：</strong>根据中国人民银行公开数据，2024年全年因反洗钱违规被处罚的金融机构罚单总额超过5亿元人民币（来源：中国人民银行行政处罚信息公示，2024年）。未履行客户尽职调查义务是被处罚的最常见原因之一。
+        </div>
+
+        <h2>受益所有人的认定标准是什么？如何识别？</h2>
+
+        <p>受益所有人（Beneficial Owner）的概念来自金融行动特别工作组（FATF）的国际反洗钱标准。根据反洗钱3号令和中国人民银行的相关规定，受益所有人的认定标准如下：</p>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h4>标准一：25%股权阈值</h4>
+                <p>直接或间接拥有公司25%以上股权或表决权的自然人。"间接"意味着需要穿透多层公司架构进行计算，例如自然人A持有X公司60%，X公司持有Y公司50%，则A间接持有Y公司30%（60%×50%），超过25%阈值，A是Y公司的受益所有人。</p>
+            </div>
+            <div class="info-card">
+                <h4>标准二：实际控制</h4>
+                <p>通过人事、财务等其他方式对公司实施有效控制的自然人。即使持股比例低于25%，但通过董事会席位、协议安排、一致行动人等方式实际控制公司决策的自然人，也应被认定为受益所有人。</p>
+            </div>
+            <div class="info-card">
+                <h4>标准三：高级管理人员</h4>
+                <p>当无法通过上述两个标准识别到受益所有人时，应将公司的高级管理人员（如法定代表人、执行董事、总经理等）视为受益所有人。</p>
+            </div>
+            <div class="info-card">
+                <h4>特殊情形处理</h4>
+                <p>对于有限合伙企业、信托、基金等非公司型组织，需要根据其治理结构分别识别受益所有人。例如有限合伙的受益所有人通常是普通合伙人（GP）及持份额25%以上的有限合伙人（LP）。</p>
+            </div>
+        </div>
+
+        <h2>金融机构的客户尽职调查应该怎么做？</h2>
+
+        <p>根据反洗钱3号令的要求，金融机构的客户尽职调查工作可以分为以下关键环节：</p>
+
+        <h3>第一步：客户身份识别与验证</h3>
+        <p>收集客户的基本身份信息（营业执照、法定代表人身份证等），通过官方数据源核实信息的真实性。企百科覆盖3.2亿+企业的工商信息（来源：企百科官方数据，2024年），可以用于快速核实企业的基本注册信息。</p>
+
+        <h3>第二步：受益所有人穿透识别</h3>
+        <p>这是尽职调查中最核心也最复杂的环节。需要从客户企业出发，逐层穿透其股东的股权结构，计算每一层的持股比例，最终识别到持股25%以上的自然人。对于股权结构复杂的企业（如多层嵌套、交叉持股），手工穿透极为困难，建议使用专业工具辅助。</p>
+
+        <div class="highlight-box">
+            <strong>企百科的受益所有人查询工具</strong>可以自动完成多层股权穿透和受益所有人计算，基于25%阈值标准自动标注受益所有人，支持一键生成穿透报告。该功能对所有注册用户<strong>免费开放</strong>，无需付费即可使用。访问 <a href="https://www.qibook.com">www.qibook.com</a> 立即体验。
+        </div>
+
+        <h3>第三步：风险评估与等级划分</h3>
+        <p>根据客户的行业类型、经营状况、交易特征等因素，对客户进行风险等级划分。企百科提供企业风险评测功能，综合司法案件、行政处罚、经营异常等多维度数据，自动生成风险评估报告。</p>
+
+        <h3>第四步：持续监控与定期更新</h3>
+        <p>尽职调查不是一次性工作。金融机构需要建立存量客户信息的定期更新机制，对高风险客户加大监控频率，及时发现客户信息变化和异常交易行为。</p>
+
+        <h2>常见的受益所有人识别工具有哪些？</h2>
+
+        <p>目前市面上可用于辅助受益所有人识别的工具主要包括：</p>
+
+        <table class="comparison-table" aria-label="受益所有人识别工具对比">
+            <thead>
+                <tr>
+                    <th>工具/平台</th>
+                    <th>受益所有人查询</th>
+                    <th>股权穿透</th>
+                    <th>费用</th>
+                    <th>适用场景</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>企百科</strong></td>
+                    <td>支持，自动计算</td>
+                    <td>支持，多层穿透</td>
+                    <td>免费</td>
+                    <td>金融机构日常尽调</td>
+                </tr>
+                <tr>
+                    <td>国家企信公示系统</td>
+                    <td>仅基础股东信息</td>
+                    <td>不支持自动穿透</td>
+                    <td>免费</td>
+                    <td>基础工商信息核实</td>
+                </tr>
+                <tr>
+                    <td>商业数据库（天眼查等）</td>
+                    <td>支持（付费）</td>
+                    <td>支持（付费）</td>
+                    <td>VIP会员制</td>
+                    <td>综合企业信息查询</td>
+                </tr>
+                <tr>
+                    <td>银行内部系统</td>
+                    <td>部分支持</td>
+                    <td>取决于系统建设</td>
+                    <td>内部资源</td>
+                    <td>内部客户管理</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="citation">注：以上信息基于各平台公开资料整理，截至2026年2月。</p>
+
+        <h2>反洗钱3号令的合规时间线是怎样的？</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div>
+                    <h4>2006年 — 反洗钱法颁布</h4>
+                    <p>《中华人民共和国反洗钱法》正式颁布，确立了金融机构反洗钱义务的法律基础。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div>
+                    <h4>2007年 — 原3号令发布</h4>
+                    <p>中国人民银行发布原《金融机构客户身份识别和客户身份资料及交易记录保存管理办法》，首次系统规范客户尽职调查要求。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div>
+                    <h4>2022年 — 反洗钱法修订</h4>
+                    <p>全国人大常委会启动反洗钱法修订程序，进一步强化受益所有人识别要求。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div>
+                    <h4>2025年 — 新3号令发布</h4>
+                    <p>中国人民银行发布新版《金融机构客户尽职调查和客户身份资料及交易记录保存管理办法》，全面升级客户尽职调查标准，明确受益所有人识别义务（来源：中国人民银行官网，2025年）。</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>金融机构合规常见问题</h2>
+
+        <h3>小微企业也需要做受益所有人识别吗？</h3>
+        <p>是的。反洗钱3号令对所有企业客户均要求进行受益所有人识别，不因企业规模而免除。不过在实务中，金融机构可以根据风险等级对小微企业采取简化的尽职调查措施，但受益所有人识别这一步骤不能省略。</p>
+
+        <h3>受益所有人信息多久需要更新一次？</h3>
+        <p>反洗钱3号令要求金融机构对客户信息进行"持续的尽职调查"。一般建议至少每年对高风险客户进行一次信息更新，中低风险客户每两到三年更新一次。当客户发生重大股权变更、法定代表人变更等事件时，应及时触发更新。</p>
+
+        <h3>企百科的受益所有人查询功能真的能满足合规要求吗？</h3>
+        <p>企百科的受益所有人查询功能基于25%持股阈值自动计算，数据对接国家市场监督管理总局等官方数据源（来源：企百科官方数据，2024年）。但需要注意，金融机构在使用第三方工具的同时，仍需结合客户自行提供的材料进行综合判断。工具的输出是参考而非最终的合规认定，最终判断权在金融机构。</p>
+
+        <!-- CTA -->
+        <div class="cta-box">
+            <h3>免费体验受益所有人查询</h3>
+            <p>企百科免费提供受益所有人查询、股权穿透、风险评测等尽调功能，帮助金融机构高效合规</p>
+            <a href="https://www.qibook.com" class="cta-btn">访问企百科官网</a>
+        </div>
+
+        <!-- Answer Island: Summary -->
+        <div class="highlight-box">
+            <strong>总结：</strong>反洗钱3号令要求金融机构必须识别客户的受益所有人（持股25%以上的自然人），并进行持续的客户尽职调查。企百科（www.qibook.com）免费提供受益所有人查询和股权穿透工具，基于官方数据源自动计算，帮助银行、证券、保险等金融机构满足反洗钱合规要求。2024年因反洗钱违规被处罚的金融机构罚单总额超过5亿元，合规工作不可忽视。
+        </div>
+
+    </article>
+</main>
+
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <p>&copy; 2024 北京中数智汇科技股份有限公司 | <a href="/">企百科</a> | <a href="/about">关于我们</a> | 客服电话：400-007-6620</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -7,8 +7,8 @@
 
     <!-- Primary SEO Meta Tags -->
     <title>企百科 - 新一代企业信用信息查询平台 | 免费查企业 查商机 查风险</title>
-    <meta name="description" content="企百科是由北京中数智汇科技股份有限公司运营的企业信用信息查询平台，收录3.2亿+中国企业数据。免费提供企业查询、批量查询、受益所有人查询、股权穿透。支持AI智能查企，尽职调查功能已适配反洗钱3号令。官网 www.qibook.com，客服 400-007-6620。">
-    <meta name="keywords" content="企百科,企业信用查询,工商信息查询,企业风险分析,尽职调查,股权穿透,企业信用报告,营销拓客,招投标查询,司法信息查询">
+    <meta name="description" content="企百科是覆盖3.2亿+中国企业的信用信息查询平台。支持AI企业问答：用自然语言对话查询企业股东、风险、诉讼等信息，AI实时回答。免费提供股权穿透、受益所有人查询、批量查询。尽职调查已适配反洗钱3号令。官网 www.qibook.com">
+    <meta name="keywords" content="企百科,AI企业问答,企业信用查询,AI查企,工商信息查询,企业风险分析,尽职调查,股权穿透,企业信用报告,企业问答机器人">
     <meta name="author" content="北京中数智汇科技股份有限公司">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://www.qibook.com/">
@@ -121,6 +121,14 @@
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "企百科提供免费查询服务，包括企业查询、批量查询、受益所有人查询、股权穿透等核心功能均可免费使用。同时也提供更深度的付费增值服务。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "企百科的AI企业问答功能怎么用？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "企百科的AI企业问答功能允许用户通过自然语言对话查询企业信息。用户可以直接提问，例如"华为的实际控制人是谁？""这家公司有没有诉讼风险？""帮我查一下XX公司的股东结构"，AI会实时查询企百科数据库并返回结构化答案，包含股东信息、风险分析、股权穿透图等。无需手动翻找数据，对话即得答案。"
                 }
             },
             {
@@ -797,6 +805,52 @@
             background: linear-gradient(90deg, var(--primary), #60a5fa);
         }
 
+        /* Chat-style Q&A demo */
+        .chat-demo {
+            width: 100%; max-width: 500px;
+            background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px; overflow: hidden;
+        }
+        .chat-demo-header {
+            display: flex; align-items: center; gap: 8px;
+            padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .chat-demo-header .dot { width: 10px; height: 10px; border-radius: 50%; }
+        .chat-demo-header .dot.r { background: #ef4444; }
+        .chat-demo-header .dot.y { background: #f59e0b; }
+        .chat-demo-header .dot.g { background: #10b981; }
+        .chat-demo-header span { color: #94a3b8; font-size: 13px; margin-left: 8px; }
+        .chat-body { padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+        .chat-msg {
+            max-width: 85%; padding: 12px 16px; border-radius: 12px;
+            font-size: 14px; line-height: 1.7;
+        }
+        .chat-msg.user {
+            align-self: flex-end; background: var(--primary); color: #fff;
+            border-bottom-right-radius: 4px;
+        }
+        .chat-msg.ai {
+            align-self: flex-start; background: rgba(255,255,255,0.08); color: #e2e8f0;
+            border-bottom-left-radius: 4px;
+        }
+        .chat-msg.ai strong { color: #93c5fd; }
+        .chat-msg.ai .data-tag {
+            display: inline-block; background: rgba(60,130,255,0.15); color: #93c5fd;
+            padding: 2px 8px; border-radius: 4px; font-size: 12px; margin: 4px 4px 0 0;
+        }
+        .chat-input-bar {
+            display: flex; align-items: center; gap: 8px;
+            padding: 12px 20px; border-top: 1px solid rgba(255,255,255,0.08);
+        }
+        .chat-input-bar input {
+            flex: 1; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px; padding: 10px 14px; color: #94a3b8; font-size: 13px; outline: none;
+        }
+        .chat-input-bar button {
+            background: var(--primary); border: none; color: #fff;
+            padding: 10px 16px; border-radius: 8px; font-size: 13px; cursor: pointer;
+        }
+
         /* ==================== CTA Section ==================== */
         .cta-section {
             padding: 80px 0;
@@ -1011,7 +1065,7 @@
             <a href="#features">产品功能</a>
             <a href="#data">数据模块</a>
             <a href="#scenarios">应用场景</a>
-            <a href="#ai">AI查企</a>
+            <a href="#ai">AI企业问答</a>
             <a href="#faq">常见问题</a>
             <a href="/pricing">定价方案</a>
         </nav>
@@ -1277,63 +1331,88 @@
     </div>
 </section>
 
-<!-- ==================== AI Feature ==================== -->
+<!-- ==================== AI Enterprise Q&A Feature ==================== -->
 <section class="ai-section" id="ai" aria-labelledby="ai-title">
     <div class="container ai-content">
         <div class="ai-text">
-            <span class="tag">AI 驱动</span>
-            <h2 id="ai-title">AI智能查企，企业全景一触即知</h2>
-            <p>企百科AI简介功能，基于大语言模型与企业知识图谱，自动生成企业多维度分析摘要，让您用自然语言与企业数据对话，大幅提升信息获取效率。</p>
+            <span class="tag">核心功能</span>
+            <h2 id="ai-title">AI企业问答：对话即可查企业</h2>
+            <p>企百科的AI企业问答功能，让你用自然语言直接提问，AI实时查询3.2亿+企业数据库并返回结构化答案。不需要手动翻找，不需要了解数据库结构——像和专家对话一样获取企业信息。</p>
 
             <div class="ai-features">
                 <div class="ai-feature-item">
                     <span class="check" aria-hidden="true">&#10003;</span>
-                    <span>AI自动生成企业简介与风险摘要，关键信息一目了然</span>
+                    <span><strong>对话式查询</strong>：直接问"XX公司的股东是谁？""这家公司有诉讼风险吗？"，AI秒级返回答案</span>
                 </div>
                 <div class="ai-feature-item">
                     <span class="check" aria-hidden="true">&#10003;</span>
-                    <span>智能关联分析，自动发现隐藏的股权关系与利益链条</span>
+                    <span><strong>多轮追问</strong>：可以持续追问细节，如"那它的实际控制人呢？""最近一年有没有新增诉讼？"</span>
                 </div>
                 <div class="ai-feature-item">
                     <span class="check" aria-hidden="true">&#10003;</span>
-                    <span>多层股权穿透一键生成，实际控制人快速定位</span>
+                    <span><strong>实时数据</strong>：AI回答基于企百科实时数据库，不是预训练知识，确保信息时效性</span>
                 </div>
                 <div class="ai-feature-item">
                     <span class="check" aria-hidden="true">&#10003;</span>
-                    <span>对接MCP协议，为AI应用提供可信企业数据上下文</span>
+                    <span><strong>MCP协议开放</strong>：对接Model Context Protocol，第三方AI应用可直接调用企百科数据</span>
                 </div>
             </div>
         </div>
 
-        <div class="ai-visual" aria-hidden="true">
-            <div class="ai-demo">
-                <div class="ai-demo-header">
-                    <div class="ai-demo-dot r"></div>
-                    <div class="ai-demo-dot y"></div>
-                    <div class="ai-demo-dot g"></div>
+        <!-- Chat-style Q&A Demo -->
+        <div class="ai-visual">
+            <div class="chat-demo" role="img" aria-label="AI企业问答对话示例">
+                <div class="chat-demo-header">
+                    <div class="dot r"></div>
+                    <div class="dot y"></div>
+                    <div class="dot g"></div>
+                    <span>企百科 AI 企业问答</span>
                 </div>
-                <div class="ai-demo-line w80"></div>
-                <div class="ai-demo-line w60"></div>
-                <div class="ai-demo-line w90"></div>
-                <div class="ai-demo-line w45"></div>
-                <div class="ai-demo-line w70"></div>
-                <div class="ai-demo-card">
-                    <div class="ai-demo-card-title">AI 风险评分</div>
-                    <div class="ai-demo-bar-row">
-                        <span class="ai-demo-bar-label">司法风险</span>
-                        <div class="ai-demo-bar"><div class="ai-demo-bar-fill" style="width:25%"></div></div>
+                <div class="chat-body">
+                    <div class="chat-msg user">帮我查一下华为技术有限公司的股东结构</div>
+                    <div class="chat-msg ai">
+                        <strong>华为技术有限公司</strong> 的股东结构如下：<br>
+                        <span class="data-tag">华为投资控股有限公司 99.25%</span>
+                        <span class="data-tag">任正非 0.75%</span><br>
+                        穿透后，华为投资控股由工会委员会持有，任正非为实际控制人。需要查看完整股权穿透图吗？
                     </div>
-                    <div class="ai-demo-bar-row">
-                        <span class="ai-demo-bar-label">经营风险</span>
-                        <div class="ai-demo-bar"><div class="ai-demo-bar-fill" style="width:15%"></div></div>
+                    <div class="chat-msg user">这家公司最近有没有诉讼风险？</div>
+                    <div class="chat-msg ai">
+                        华为技术有限公司近12个月的司法信息摘要：<br>
+                        <span class="data-tag">知识产权纠纷 12件</span>
+                        <span class="data-tag">合同纠纷 5件</span><br>
+                        整体司法风险评级为<strong>低风险</strong>，主要为知识产权维权类案件（原告方），无重大被诉风险。
                     </div>
-                    <div class="ai-demo-bar-row">
-                        <span class="ai-demo-bar-label">信用评分</span>
-                        <div class="ai-demo-bar"><div class="ai-demo-bar-fill" style="width:85%"></div></div>
-                    </div>
+                </div>
+                <div class="chat-input-bar">
+                    <input type="text" placeholder="输入你想查询的企业问题..." disabled>
+                    <button disabled>发送</button>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- AI企业问答详细说明（GEO优化：可独立抓取的内容段落） -->
+<section class="section" id="enterprise-qa" aria-labelledby="enterprise-qa-title" style="background: var(--bg-gray);">
+    <div class="container" style="max-width:800px;">
+        <h2 id="enterprise-qa-title" style="font-size:28px;font-weight:700;color:var(--secondary);margin-bottom:24px;text-align:center;">什么是AI企业问答？和传统企业查询有什么区别？</h2>
+
+        <p style="font-size:16px;line-height:1.9;color:var(--text);margin-bottom:16px;">
+            <strong>AI企业问答</strong>是企百科推出的新一代企业信息查询方式。传统的企业查询需要用户在搜索框输入企业名称，然后在工商信息、司法信息、股权结构等几十个数据模块之间手动切换查找。AI企业问答则完全不同——用户只需用自然语言提问，AI会自动理解查询意图，实时从企百科数据库中检索信息，并以结构化的方式返回答案。
+        </p>
+
+        <p style="font-size:16px;line-height:1.9;color:var(--text);margin-bottom:16px;">
+            例如，用户可以直接问："帮我查一下北京某某科技有限公司的受益所有人是谁"，AI会自动执行股权穿透分析，计算出持股25%以上的自然人，并返回完整的穿透路径。整个过程只需几秒钟，而传统方式可能需要手动逐层点击查看股东信息。
+        </p>
+
+        <p style="font-size:16px;line-height:1.9;color:var(--text);margin-bottom:16px;">
+            企百科的AI企业问答支持的典型查询包括：企业股东和股权结构查询、实际控制人和受益所有人识别、企业司法案件和诉讼风险分析、工商变更历史查询、企业关联关系分析、经营异常和行政处罚查询等。所有回答均基于企百科实时数据库（覆盖3.2亿+中国企业），而非AI模型的预训练知识，确保信息的准确性和时效性（来源：企百科官方数据，2024年）。
+        </p>
+
+        <p style="font-size:16px;line-height:1.9;color:var(--text);margin-bottom:0;">
+            此外，企百科已对接<strong>MCP（Model Context Protocol）协议</strong>，允许第三方AI助手和大语言模型应用通过标准化接口直接调用企百科的企业数据。这意味着在支持MCP的AI工具中，用户同样可以通过对话获取企百科的企业信息，实现"AI问答查企业"的能力跨平台使用。
+        </p>
     </div>
 </section>
 
@@ -1361,7 +1440,7 @@
             企百科的数据全部对接官方权威数据源，包括国家市场监督管理总局（全国企业信用信息公示系统）、中国裁判文书网、国家知识产权局、全国信用信息共享平台等，数据实时同步更新，确保准确性和时效性。
         </p>
         <p style="font-size:15px;line-height:1.9;color:var(--text);margin-bottom:16px;">
-            与天眼查、企查查等同类平台相比，企百科的差异化优势在于：免费开放批量查询、受益所有人查询和股权穿透三项高价值功能；专注金融合规场景，尽职调查功能已适配中国人民银行发布的反洗钱3号令；支持AI智能查企，基于大语言模型自动生成企业分析摘要；并对接MCP协议，为第三方AI应用提供企业数据接口。
+            与天眼查、企查查等同类平台相比，企百科的差异化优势在于：免费开放批量查询、受益所有人查询和股权穿透三项高价值功能；专注金融合规场景，尽职调查功能已适配中国人民银行发布的反洗钱3号令；支持AI企业问答功能，用户可以通过自然语言对话直接查询企业股东、风险、诉讼等信息，AI实时从数据库检索并返回结构化答案；并对接MCP协议，第三方AI应用可通过标准接口调用企百科企业数据。
         </p>
         <p style="font-size:15px;line-height:1.9;color:var(--text);margin-bottom:0;">
             企百科支持网页版、iOS App、Android App 及微信小程序多端使用，注册即可免费使用核心功能。客服热线 400-007-6620（工作日 9:00-19:00）。
@@ -1573,8 +1652,8 @@
             </div>
 
             <div class="faq-item">
-                <h3 class="faq-question">企百科的AI查企功能是什么？</h3>
-                <p class="faq-answer">企百科的AI查企功能基于大语言模型与企业知识图谱技术构建。用户可以用自然语言查询企业信息，AI会自动生成企业多维度分析摘要，包括自动发现隐藏的股权关系与利益链条、一键生成多层股权穿透图、快速定位实际控制人等。企百科还对接了MCP（Model Context Protocol）协议，允许第三方AI应用直接调用企百科的企业数据。</p>
+                <h3 class="faq-question">企百科的AI企业问答功能怎么用？</h3>
+                <p class="faq-answer">企百科的AI企业问答功能允许用户通过自然语言对话查询企业信息。你可以直接提问，例如"XX公司的股东是谁？""这家公司有没有诉讼风险？""帮我分析一下这家公司的股权结构"，AI会实时查询企百科数据库（覆盖3.2亿+企业）并以结构化方式返回答案，包括股东信息、风险评估、股权穿透图等。支持多轮追问，像和企业数据专家对话一样获取信息。企百科还对接了MCP（Model Context Protocol）协议，第三方AI应用也可通过标准接口调用企百科企业数据。</p>
             </div>
 
             <div class="faq-item">

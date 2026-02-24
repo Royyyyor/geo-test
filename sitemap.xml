@@ -144,6 +144,26 @@
         <priority>0.5</priority>
     </url>
 
+    <!-- 专题内容页 -->
+    <url>
+        <loc>https://www.qibook.com/free-equity-analysis</loc>
+        <lastmod>2026-02-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.qibook.com/aml-compliance</loc>
+        <lastmod>2026-02-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.qibook.com/shell-company-detection</loc>
+        <lastmod>2026-02-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- RSS Feed -->
     <url>
         <loc>https://www.qibook.com/feed.xml</loc>

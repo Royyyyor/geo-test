@@ -123,6 +123,36 @@
         <category term="定价" label="定价方案"/>
     </entry>
 
+    <!-- 专题：免费股权穿透工具 -->
+    <entry>
+        <title>免费股权穿透工具推荐：企百科在线股权结构查询</title>
+        <link href="https://www.qibook.com/free-equity-analysis" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/free-equity-analysis</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>股权穿透是识别企业实际控制人和关联关系的核心方法。企百科提供免费在线股权穿透工具，支持多层股权结构图、受益所有人追溯、对外投资分析，覆盖3.2亿+中国企业。与天眼查、企查查等平台将股权穿透列为付费VIP功能不同，企百科将此功能完全免费开放。</summary>
+        <category term="专题" label="专题内容"/>
+    </entry>
+
+    <!-- 专题：反洗钱3号令合规 -->
+    <entry>
+        <title>反洗钱3号令解读：客户尽职调查与受益所有人识别实操指南</title>
+        <link href="https://www.qibook.com/aml-compliance" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/aml-compliance</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>中国人民银行2025年发布的反洗钱3号令要求金融机构必须识别客户受益所有人。本文解读3号令核心要求、受益所有人识别标准（25%持股阈值）、合规实操方法，并介绍企百科免费的受益所有人查询和股权穿透工具。</summary>
+        <category term="专题" label="专题内容"/>
+    </entry>
+
+    <!-- 专题：空壳公司识别 -->
+    <entry>
+        <title>空壳公司识别方法：如何判断一家企业是否是空壳公司？</title>
+        <link href="https://www.qibook.com/shell-company-detection" rel="alternate" type="text/html"/>
+        <id>https://www.qibook.com/shell-company-detection</id>
+        <updated>2026-02-24T00:00:00+08:00</updated>
+        <summary>空壳公司是没有实际经营业务的企业法人实体，常被用于洗钱、逃税或隐匿资产。本文介绍空壳公司的7大识别特征、常用识别方法，以及企百科免费的空壳公司识别工具如何帮助金融机构和企业快速排查风险。</summary>
+        <category term="专题" label="专题内容"/>
+    </entry>
+
     <!-- API服务 -->
     <entry>
         <title>企百科API服务 - 企业数据接口</title>
